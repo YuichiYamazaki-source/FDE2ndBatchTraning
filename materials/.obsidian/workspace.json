@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "e851a2b8bd0ca442",
+    "type": "split",
+    "children": [
+      {
+        "id": "17876d768b82a9a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f58ba4a8ac090c5a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c4d722382191a294",
+    "type": "split",
+    "children": [
+      {
+        "id": "31425c452d7a8304",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0777697fea1db9b9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "df506adeeaed8462",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d92d82fc6a9c063a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d24ef790ce9f8a90",
+    "type": "split",
+    "children": [
+      {
+        "id": "30f5dd6060534a07",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df31b93e0f8276eb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "materials/Introduction AI and Prompt Engineering/Introduction To GenAI & Prompt Engineering.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Introduction To GenAI & Prompt Engineering"
+            }
+          },
+          {
+            "id": "eecac837c2e6d804",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "materials/Introduction AI and Prompt Engineering/Introduction To GenAI & Prompt Engineering.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Introduction To GenAI & Prompt Engineering"
+            }
+          },
+          {
+            "id": "3a1cdb0d30c2cfcf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9860e410d15ed3d8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "2eae9e067836dfdd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "materials/Introduction AI and Prompt Engineering/Introduction To GenAI & Prompt Engineering.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Introduction To GenAI & Prompt Engineering"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "f58ba4a8ac090c5a",
+  "lastOpenFiles": [
+    "materials/Introduction AI and Prompt Engineering/Introduction To GenAI & Prompt Engineering.md",
+    "materials/Captone/FDE Capstone Lens.md",
+    "materials/Captone/README.md",
+    "Untitled.canvas",
+    "materials/Introduction AI and Prompt Engineering/Lesson_01_Getting_Started_with_GenAI.pdf",
+    "materials/Introduction AI and Prompt Engineering/Lesson_02_Optimizing_GenAI_Models.pdf",
+    "materials/Introduction AI and Prompt Engineering/Prompt Engineering.md",
+    "materials/Captone/Production-Grade AI Commerce Microservices Platform - Milestone project.pdf",
+    "materials/Captone/Milestone 20260223.pdf",
+    "CLAUDE.md",
+    "materials/Captone/Lesson_01_Getting_Started_with_GenAI.pdf",
+    "materials/Captone/Lesson_02_Optimizing_GenAI_Models.pdf",
+    "materials/Captone/Capstone Policy.md",
+    "materials/FDE_Lesson_Template.md",
+    "materials/Introduction AI and Prompt Engineering/Prompt Engineering.md.md",
+    "materials/Introduction AI and Prompt Engineering/{{PromptEngineering}}.md",
+    "materials/Introduction AI and Prompt Engineering"
+  ]
+}

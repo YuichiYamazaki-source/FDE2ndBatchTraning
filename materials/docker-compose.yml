@@ -1,0 +1,31 @@
+services:
+  app:
+    build: .
+    container_name: fde-learning
+    volumes:
+      - .:/app        # ホストのファイルをリアルタイムで同期
+    ports:
+      # API (MicroService用 10ポート)
+      - "8000:8000"
+      - "8001:8001"
+      - "8002:8002"
+      - "8003:8003"
+      - "8004:8004"
+      - "8005:8005"
+      - "8006:8006"
+      - "8007:8007"
+      - "8008:8008"
+      - "8009:8009"
+      # Jupyter Notebook
+      - "8888:8888"
+      # React (フロントエンド)
+      - "3000:3000"
+      - "5173:5173"
+      # DB
+      - "27017:27017" # MongoDB
+      - "5432:5432"   # PostgreSQL
+      - "3306:3306"   # MySQL
+      - "6379:6379"   # Redis
+    stdin_open: true
+    tty: true
+    command: bash
