@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/yuila/Documents/FDE2ndBatchTraning/**)",
+      "Bash(du -sh /c/Users/yuila/Documents/FDE2ndBatchTraning/*/)",
+      "Bash(docker-compose build)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\yuila\\Documents\\FDE2ndBatchTraning"
+    ]
+  }
+}

@@ -11,10 +11,14 @@
             "id": "f58ba4a8ac090c5a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Orchestrated LLM Application/Task5_Orchestrated_LLM.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Task5_Orchestrated_LLM"
             }
           }
         ]
@@ -181,6 +185,16 @@
   },
   "active": "f58ba4a8ac090c5a",
   "lastOpenFiles": [
+    "Orchestrated LLM Application/step1_eval/README.md",
+    "Orchestrated LLM Application/Task5_Orchestrated_LLM.md",
+    "Orchestrated LLM Application/Task5_NewsCredibilityChecker_Architecture.md",
+    "Orchestrated LLM Application/minimal_mvp/README.md",
+    "Orchestrated LLM Application/step1_eval/main.py",
+    "Orchestrated LLM Application/step1_eval",
+    "Orchestrated LLM Application/minimal_mvp/main.py",
+    "Orchestrated LLM Application/minimal_mvp",
+    "Orchestrated LLM Application/main.py",
+    "Orchestrated LLM Application/Agent Architecture.md",
     "materials/Introduction AI and Prompt Engineering/Introduction To GenAI & Prompt Engineering.md",
     "materials/Captone/FDE Capstone Lens.md",
     "materials/Captone/README.md",
@@ -192,11 +206,9 @@
     "materials/Captone/Milestone 20260223.pdf",
     "CLAUDE.md",
     "materials/Captone/Lesson_01_Getting_Started_with_GenAI.pdf",
-    "materials/Captone/Lesson_02_Optimizing_GenAI_Models.pdf",
     "materials/Captone/Capstone Policy.md",
     "materials/FDE_Lesson_Template.md",
     "materials/Introduction AI and Prompt Engineering/Prompt Engineering.md.md",
-    "materials/Introduction AI and Prompt Engineering/{{PromptEngineering}}.md",
-    "materials/Introduction AI and Prompt Engineering"
+    "materials/Introduction AI and Prompt Engineering/{{PromptEngineering}}.md"
   ]
 }

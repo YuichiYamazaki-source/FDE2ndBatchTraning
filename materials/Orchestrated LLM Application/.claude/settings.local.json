@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/yuila/Documents/FDE2ndBatchTraning/**)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\yuila\\Documents\\FDE2ndBatchTraning",
+      "C:\\Users\\yuila\\.claude\\projects\\c--Users-yuila-Documents-FDE2ndBatchTraning\\memory"
+    ]
+  }
+}
