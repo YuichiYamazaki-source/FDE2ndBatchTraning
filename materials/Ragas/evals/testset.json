@@ -1,0 +1,92 @@
+[
+  {
+    "_type": "product_search — 一般的な商品検索",
+    "query": "I'm looking for a comfortable office chair under $200",
+    "ground_truth": "Here are some comfortable office chairs under $200: 1. **Yoyomax Office Chair** - Price: $32.99, Rating: ⭐4.6, Features: Ergonomic design, comfortable armrests, mesh material with wheels. 2. **JONPONY Office Chair** - Price: $69.99, Rating: ⭐4.4, Features: Armless design, crisscross legs, adjustable swivel, padded fabric. 3. **Homy Casa Teens Task Home Office Chair** - Price: $43.99, Rating: ⭐4.2, Features: Ergonomic small design, lumbar support, breathable mesh seat.",
+    "product_id": null
+  },
+  {
+    "_type": "product_detail — 特定商品の詳細",
+    "query": "Tell me about product 430528189. What are the specifications?",
+    "ground_truth": "The Exultantex Grey Blackout Curtains are priced at $47.88 and have a rating of 4.6 from 58 reviews. They feature a soft triple weave fabric, block at least 81% of light, and come in a set of 2 panels measuring 50\"W x 95\"L. Suitable for various rooms, they are easy to install and machine washable.",
+    "product_id": "430528189"
+  },
+  {
+    "_type": "product_search — 価格帯指定",
+    "query": "What are some affordable women's yoga pants?",
+    "ground_truth": "Some affordable women's yoga pants include the Zenana Women's Soft Wide Waistband Active Fitness Tight Yoga Pants priced at $11.99 with a rating of ⭐4.1, the Pntutb Women's Solid Pants at $6.89 with a rating of ⭐5.0, and the a.Jesdani Women's Wide Leg Casual Pants for $14.99 with a rating of ⭐4.7.",
+    "product_id": null
+  },
+  {
+    "_type": "review_analysis — レビュー分析",
+    "query": "Is product 5498678230 worth buying? What do customers say?",
+    "ground_truth": "The **JONPONY Office Chair** has a solid rating of **4.4** based on **34 reviews**. Customers appreciate its comfort for long hours, easy assembly, stylish design, and sturdiness, although some have reported assembly issues and part discrepancies.",
+    "product_id": "5498678230"
+  },
+  {
+    "_type": "product_search — カテゴリ指定",
+    "query": "Show me cotton bed sheets with good ratings",
+    "ground_truth": "Here are some highly-rated cotton bed sheets: 1. Amay 100% Cotton 600-Thread Count 4-PCs Sheet Set - Price: $106.19, Rating: ⭐5.0, Fits up to 21 inch deep pockets, solid white. 2. Amay 800TC Organic Cotton Emperor Size Fitted Sheet - Price: $62.10, Rating: ⭐5.0, Fits mattresses up to 18 inches, royal blue solid. 3. Amay 100% Cotton 600-Thread Count 4-PCs Sheet Set - Price: $88.19, Rating: ⭐4.2, Fits up to 24 inch deep pockets, solid ivory (RV Short Queen).",
+    "product_id": null
+  },
+  {
+    "_type": "product_search — ブランド指定",
+    "query": "Do you have any Nike workout shorts for men?",
+    "ground_truth": "Currently, there are no Nike workout shorts for men available. However, you can consider alternatives like the Athletic Works Men's 9\" Knit Jersey Shorts for $9.98 with a rating of ⭐4.6, or the NELEUS Mens 2 in 1 Dry Fit Workout Shorts priced at $42.89 and rated ⭐4.5.",
+    "product_id": null
+  },
+  {
+    "_type": "product_search — 用途ベース",
+    "query": "I need curtains for my living room that block sunlight",
+    "ground_truth": "For your living room, consider the Eclipse Dayton Solid Blackout Rod Pocket Curtain Panel in Chocolate, priced at $18.95 with a rating of 3.9. Another great option is the Mainstays Blackout Curtain Panel Pair in Black, available for $9.94 and rated 4.4. If you're looking for larger panels, the Amay Grommet Top Blackout Curtain Panel in White is 120 inches wide and costs $140.80, rated 5.0.",
+    "product_id": null
+  },
+  {
+    "_type": "product_detail — 成分確認",
+    "query": "What are the ingredients in product 173530386? Is it safe for sensitive skin?",
+    "ground_truth": "The Laura Mercier Caviar Stick Eye Color in Sugar Frost contains ingredients such as Cyclopentasiloxane, Trimethylsiloxysilicate, and Synthetic Beeswax. It is generally considered safe for sensitive skin, but a patch test is recommended due to some potentially irritating ingredients. The product is priced at $22.90 and has a rating of 4.0 from 6 reviews.",
+    "product_id": "173530386"
+  },
+  {
+    "_type": "review_analysis — 品質確認",
+    "query": "Are the sheets product 1783772415 good quality? What are the pros and cons?",
+    "ground_truth": "The California Design Den Queen Fitted Sheet has a rating of 4.5 based on 156 reviews. Pros include a soft texture, snug fit for thicker mattresses, durability, and good value for the price. Cons involve issues with color delivery and smaller than expected pocket size.",
+    "product_id": "1783772415"
+  },
+  {
+    "_type": "recommendation — 代替商品の推薦",
+    "query": "Product 1507001378 has bad reviews. Can you suggest better alternatives?",
+    "ground_truth": "A highly rated alternative to the ITSUN Lingerie Set is the Avidlove Christmas Romper Pajamas, priced at $19.99 and boasting a rating of 4.9 stars. This sexy Santa Velvet Lingerie Jumpsuit Shorts Bodysuit comes in red and has received positive feedback from customers.",
+    "product_id": "1507001378"
+  },
+  {
+    "_type": "recommendation — 比較依頼",
+    "query": "I want workout shorts but better rated than product 475973491. Any suggestions?",
+    "ground_truth": "Here are some better-rated alternatives to the NELEUS Men's 2 in 1 Dry Fit Workout Shorts: 1. Ma Croix Men's Mesh Shorts With Pockets - Price: $9.99, Rating: ⭐4.3. 2. Wataxii Tear Away Shorts for Men - Price: $14.99, Rating: ⭐5.0. 3. Athletic Works Men's 9\" Knit Jersey Shorts - Price: $9.98, Rating: ⭐4.6.",
+    "product_id": "475973491"
+  },
+  {
+    "_type": "complex — 複合クエリ（検索+比較）",
+    "query": "Find me some eye makeup products and compare their prices",
+    "ground_truth": "Here are some eye makeup products along with their prices and ratings: 1. **Laura Mercier Caviar Stick Eye Color (Sugar Frost)** - **Price:** $22.90, **Rating:** ⭐4.0. 2. **wet n wild Color Icon 5 Pan Eye & Face Palette (Matte to Shimmer Glitter - Full Bloomin')** - **Price:** $3.28, **Rating:** ⭐3.5. 3. **NYX Jumbo Eye Pencil (#610 - Oyster)** - **Price:** $9.97, **Rating:** ⭐4.2. 4. **Pretty Smart Celebrity Artist Eyeshadow Palette 102** - **Price:** $9.98, **Rating:** ⭐4.6. 5. **NYX Professional Makeup Brow Powder Louder (Soft Brown)** - **Price:** $7.97, **Rating:** ⭐4.6.",
+    "product_id": null
+  },
+  {
+    "_type": "complex — 食品検索+条件付き",
+    "query": "I'm looking for healthy snacks or food products under $20",
+    "ground_truth": "Here are some healthy snack options under $20: 1. **Gerber Baby Snacks, Grain & Grow Puffs** - Price: $2.72, Rating: ⭐4.8. 2. **Zbar - Chocolate Chip and Iced Oatmeal Cookie Variety Pack** - Price: $19.98, Rating: ⭐4.4, Features: USDA Organic, Non-GMO, Plant-Based. 3. **Nature's Bakery Gluten Free Pomegranate Fig Bars** - Price: $17.49, Rating: ⭐3.7.",
+    "product_id": null
+  },
+  {
+    "_type": "complex — 子供向け商品",
+    "query": "What kids clothing do you have? I need something for a 5-year-old boy",
+    "ground_truth": "For a 5-year-old boy, you can consider the following clothing options: 1) Younger Tree Baby Boy Kid Summer Outfits Set for $9.98 with a rating of ⭐4.8, featuring a short sleeve t-shirt and shorts. 2) Lolanta Summer Boys Suit priced at $27.89 with a ⭐4.7 rating, which includes a shirt, vest, and shorts. 3) IDOPIP Baby Boys Formal Suit for $12.99, rated ⭐5.0, includes a romper with suspenders and a bowtie.",
+    "product_id": null
+  },
+  {
+    "_type": "edge_case — 曖昧なクエリ",
+    "query": "What's popular right now?",
+    "ground_truth": "Currently popular items include the Pntutb Rollback and Clearance Summer Tee Tops for Women priced at $5.39 with a rating of ⭐3.0, the PPYOUNG Women's Off Shoulder Long Sleeve Blouses at $17.99 with a rating of ⭐4.3, and the U.S. Polo Assn. Men's Interlock Polo for $30.62 with a rating of ⭐4.7. Other notable items are the JWD Women's Casual V Neck T-shirts at $14.99 (⭐4.6) and the FindChic Men Triple Moon Ring at $11.24 (⭐4.8).",
+    "product_id": null
+  }
+]

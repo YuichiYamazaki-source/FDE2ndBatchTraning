@@ -1,0 +1,752 @@
+{
+  "timestamp": "20260306_071619",
+  "num_questions": 4,
+  "scores_summary": {
+    "faithfulness": 0.9643,
+    "answer_relevancy": 0.489,
+    "context_relevance": 1.0,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "hallucination_detection": 0.0357
+  },
+  "per_question": [
+    {
+      "faithfulness": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 9,
+          "supported_claims": 9,
+          "unsupported_claims": 0,
+          "verdicts": [
+            {
+              "claim": "Yoyomax Office Chair costs $32.99",
+              "verdict": "supported",
+              "reason": "The context states the price of the Yoyomax Office Chair as $32.99."
+            },
+            {
+              "claim": "Yoyomax Office Chair has a rating of 4.6",
+              "verdict": "supported",
+              "reason": "The context indicates that the Yoyomax Office Chair has a rating of 4.6."
+            },
+            {
+              "claim": "Yoyomax Office Chair has an ergonomic design with comfortable armrests and mesh material",
+              "verdict": "supported",
+              "reason": "The context describes the Yoyomax Office Chair as ergonomic with comfortable armrests and mesh."
+            },
+            {
+              "claim": "JONPONY Office Chair costs $69.99",
+              "verdict": "supported",
+              "reason": "The context states the price of the JONPONY Office Chair as $69.99."
+            },
+            {
+              "claim": "JONPONY Office Chair has a rating of 4.4",
+              "verdict": "supported",
+              "reason": "The context indicates that the JONPONY Office Chair has a rating of 4.4."
+            },
+            {
+              "claim": "JONPONY Office Chair has an armless, criss-cross legged design, adjustable swivel, and padded fabric",
+              "verdict": "supported",
+              "reason": "The context describes the JONPONY Office Chair as armless with a criss-cross legged design, adjustable swivel, and padded fabric."
+            },
+            {
+              "claim": "Homy Casa Teens Task Home Office Chair costs $43.99",
+              "verdict": "supported",
+              "reason": "The context states the price of the Homy Casa Teens Task Home Office Chair as $43.99."
+            },
+            {
+              "claim": "Homy Casa Teens Task Home Office Chair has a rating of 4.2",
+              "verdict": "supported",
+              "reason": "The context indicates that the Homy Casa Teens Task Home Office Chair has a rating of 4.2."
+            },
+            {
+              "claim": "Homy Casa Teens Task Home Office Chair is an ergonomic small chair with lumbar support and breathable mesh seat",
+              "verdict": "supported",
+              "reason": "The context describes the Homy Casa Teens Task Home Office Chair as ergonomic with lumbar support and a breathable mesh seat."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.6236,
+        "details": {
+          "generated_questions": [
+            "What are some comfortable office chairs available for under $200?",
+            "Can you list the features of the Yoyomax Office Chair?",
+            "What is the price and rating of the JONPONY Office Chair?"
+          ],
+          "similarities": [
+            0.9104,
+            0.4713,
+            0.4892
+          ],
+          "mean_similarity": 0.6236
+        }
+      },
+      "context_relevance": {
+        "score": 1.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "relevant",
+              "reason": "Contains multiple options for office chairs under $200, including prices and ratings."
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 1.0,
+        "details": {
+          "relevance_binary": [
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 1,
+              "precision": 1.0
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": 1.0,
+        "details": {
+          "total_statements": 16,
+          "covered_statements": 16,
+          "not_covered": 0,
+          "verdicts": [
+            {
+              "statement": "Yoyomax Office Chair costs $32.99.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the price."
+            },
+            {
+              "statement": "Yoyomax Office Chair has a rating of 4.6 stars.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the rating."
+            },
+            {
+              "statement": "Yoyomax Office Chair features an ergonomic design.",
+              "verdict": "covered",
+              "reason": "The context describes it as an ergonomic office chair."
+            },
+            {
+              "statement": "Yoyomax Office Chair has comfortable armrests.",
+              "verdict": "covered",
+              "reason": "The context mentions it has comfortable armrests."
+            },
+            {
+              "statement": "Yoyomax Office Chair is made of mesh material and has wheels.",
+              "verdict": "covered",
+              "reason": "The context specifies it is a mesh chair with wheels."
+            },
+            {
+              "statement": "JONPONY Office Chair costs $69.99.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the price."
+            },
+            {
+              "statement": "JONPONY Office Chair has a rating of 4.4 stars.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the rating."
+            },
+            {
+              "statement": "JONPONY Office Chair features an armless design.",
+              "verdict": "covered",
+              "reason": "The context describes it as an armless chair."
+            },
+            {
+              "statement": "JONPONY Office Chair has crisscross legs.",
+              "verdict": "covered",
+              "reason": "The context specifies it has crisscross legs."
+            },
+            {
+              "statement": "JONPONY Office Chair is adjustable and has a swivel feature.",
+              "verdict": "covered",
+              "reason": "The context mentions it is adjustable and has a swivel feature."
+            },
+            {
+              "statement": "JONPONY Office Chair is made of padded fabric.",
+              "verdict": "covered",
+              "reason": "The context states it is made of padded fabric."
+            },
+            {
+              "statement": "Homy Casa Teens Task Home Office Chair costs $43.99.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the price."
+            },
+            {
+              "statement": "Homy Casa Teens Task Home Office Chair has a rating of 4.2 stars.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the rating."
+            },
+            {
+              "statement": "Homy Casa Teens Task Home Office Chair features an ergonomic small design.",
+              "verdict": "covered",
+              "reason": "The context describes it as an ergonomic small chair."
+            },
+            {
+              "statement": "Homy Casa Teens Task Home Office Chair has lumbar support.",
+              "verdict": "covered",
+              "reason": "The context mentions it has lumbar support."
+            },
+            {
+              "statement": "Homy Casa Teens Task Home Office Chair has a breathable mesh seat.",
+              "verdict": "covered",
+              "reason": "The context specifies it has a breathable mesh seat."
+            }
+          ]
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.0,
+        "details": {
+          "total_claims": 9,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 1.0
+        }
+      },
+      "query": "I'm looking for a comfortable office chair under $200"
+    },
+    {
+      "faithfulness": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 26,
+          "supported_claims": 26,
+          "unsupported_claims": 0,
+          "verdicts": [
+            {
+              "claim": "Price: $47.88",
+              "verdict": "supported",
+              "reason": "The context explicitly states the price."
+            },
+            {
+              "claim": "Rating: 4.6",
+              "verdict": "supported",
+              "reason": "The context explicitly states the rating."
+            },
+            {
+              "claim": "Number of reviews: 58",
+              "verdict": "supported",
+              "reason": "The context explicitly states the number of reviews."
+            },
+            {
+              "claim": "Brand: Exultantex",
+              "verdict": "supported",
+              "reason": "The context explicitly states the brand."
+            },
+            {
+              "claim": "Category: Blackout Curtains",
+              "verdict": "supported",
+              "reason": "The context explicitly states the category."
+            },
+            {
+              "claim": "Type: Curtain Sets",
+              "verdict": "supported",
+              "reason": "The context specifies the curtain type as curtain sets."
+            },
+            {
+              "claim": "Style: Rod Pocket",
+              "verdict": "supported",
+              "reason": "The context specifies the curtain panel style as rod pocket."
+            },
+            {
+              "claim": "Sheerness: Blackout",
+              "verdict": "supported",
+              "reason": "The context specifies the window treatment sheerness as blackout."
+            },
+            {
+              "claim": "Length: 95 inches",
+              "verdict": "supported",
+              "reason": "The context specifies the curtain length as 95 inches."
+            },
+            {
+              "claim": "Width Per Panel: 50 inches",
+              "verdict": "supported",
+              "reason": "The context specifies the curtain width per panel as 50 inches."
+            },
+            {
+              "claim": "Number of Panels: 2",
+              "verdict": "supported",
+              "reason": "The context specifies the number of panels as 2."
+            },
+            {
+              "claim": "Material: Triple Weave Thermal Fabric",
+              "verdict": "supported",
+              "reason": "The context specifies the material as triple weave thermal fabric."
+            },
+            {
+              "claim": "Color: Gray",
+              "verdict": "supported",
+              "reason": "The context specifies the color as gray."
+            },
+            {
+              "claim": "Pattern: Solid Print",
+              "verdict": "supported",
+              "reason": "The context specifies the pattern as solid print."
+            },
+            {
+              "claim": "Weight: 1.1 lb",
+              "verdict": "supported",
+              "reason": "The context specifies the assembled product weight as 1.1 lb."
+            },
+            {
+              "claim": "Recommended Use: Standard & Bay Windows",
+              "verdict": "supported",
+              "reason": "The context specifies recommended use for standard and bay windows."
+            },
+            {
+              "claim": "Recommended Location: Indoor",
+              "verdict": "supported",
+              "reason": "The context specifies the recommended location as indoor."
+            },
+            {
+              "claim": "Recommended Room: Bedroom, Living Room",
+              "verdict": "supported",
+              "reason": "The context specifies recommended rooms as bedroom and living room."
+            },
+            {
+              "claim": "Features: Thermal insulated",
+              "verdict": "supported",
+              "reason": "The context states that the curtains are thermal insulated."
+            },
+            {
+              "claim": "Features: noise reduction",
+              "verdict": "supported",
+              "reason": "The context states that the curtains provide noise reduction."
+            },
+            {
+              "claim": "Blocks 81% of light and UV radiation",
+              "verdict": "supported",
+              "reason": "The context states that the curtains block at least 81% of light and UV radiation."
+            },
+            {
+              "claim": "Do not bleach",
+              "verdict": "supported",
+              "reason": "The context includes care instructions stating 'Do not bleach'."
+            },
+            {
+              "claim": "Avoid pulling off pom poms",
+              "verdict": "supported",
+              "reason": "The context includes care instructions stating 'avoid pulling off pom poms'."
+            },
+            {
+              "claim": "Cool iron if necessary",
+              "verdict": "supported",
+              "reason": "The context includes care instructions stating 'cool iron if necessary'."
+            },
+            {
+              "claim": "Machine washable in a mesh bag",
+              "verdict": "supported",
+              "reason": "The context includes care instructions stating 'machine washable in a mesh bag'."
+            },
+            {
+              "claim": "No dry cleaning needed",
+              "verdict": "supported",
+              "reason": "The context includes care instructions stating 'no dry cleaning needed'."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.2052,
+        "details": {
+          "generated_questions": [
+            "What is the price of the Exultantex Grey Blackout Curtains?",
+            "What are the dimensions of each panel of the Exultantex Grey Blackout Curtains?",
+            "What care instructions should be followed for the Exultantex Grey Blackout Curtains?"
+          ],
+          "similarities": [
+            0.1718,
+            0.2634,
+            0.1804
+          ],
+          "mean_similarity": 0.2052
+        }
+      },
+      "context_relevance": {
+        "score": 1.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "relevant",
+              "reason": "Contains detailed specifications and description of product 430528189."
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 1.0,
+        "details": {
+          "relevance_binary": [
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 1,
+              "precision": 1.0
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": 1.0,
+        "details": {
+          "total_statements": 10,
+          "covered_statements": 10,
+          "not_covered": 0,
+          "verdicts": [
+            {
+              "statement": "The Exultantex Grey Blackout Curtains are priced at $47.88.",
+              "verdict": "covered",
+              "reason": "The price is explicitly stated in the context."
+            },
+            {
+              "statement": "The Exultantex Grey Blackout Curtains have a rating of 4.6.",
+              "verdict": "covered",
+              "reason": "The rating is explicitly mentioned in the context."
+            },
+            {
+              "statement": "The Exultantex Grey Blackout Curtains have 58 reviews.",
+              "verdict": "covered",
+              "reason": "The number of reviews is explicitly stated in the context."
+            },
+            {
+              "statement": "The Exultantex Grey Blackout Curtains feature a soft triple weave fabric.",
+              "verdict": "covered",
+              "reason": "The description mentions the soft triple weave fabric."
+            },
+            {
+              "statement": "The Exultantex Grey Blackout Curtains block at least 81% of light.",
+              "verdict": "covered",
+              "reason": "The context states that they block at least 81% of light."
+            },
+            {
+              "statement": "The Exultantex Grey Blackout Curtains come in a set of 2 panels.",
+              "verdict": "covered",
+              "reason": "The context specifies that they are sold in a set of 2 panels."
+            },
+            {
+              "statement": "Each panel of the Exultantex Grey Blackout Curtains measures 50 inches wide by 95 inches long.",
+              "verdict": "covered",
+              "reason": "The dimensions of each panel are provided in the context."
+            },
+            {
+              "statement": "The Exultantex Grey Blackout Curtains are suitable for various rooms.",
+              "verdict": "covered",
+              "reason": "The context mentions their suitability for various rooms."
+            },
+            {
+              "statement": "The Exultantex Grey Blackout Curtains are easy to install.",
+              "verdict": "covered",
+              "reason": "The context states that they have easy installation."
+            },
+            {
+              "statement": "The Exultantex Grey Blackout Curtains are machine washable.",
+              "verdict": "covered",
+              "reason": "The care instructions indicate that they are machine washable."
+            }
+          ]
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.0,
+        "details": {
+          "total_claims": 26,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 1.0
+        }
+      },
+      "query": "Tell me about product 430528189. What are the specifications?"
+    },
+    {
+      "faithfulness": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 3,
+          "supported_claims": 3,
+          "unsupported_claims": 0,
+          "verdicts": [
+            {
+              "claim": "Zenana Women's Soft Wide Waistband Active Fitness Tight Yoga Pants Leggings with Pockets costs $11.99 and has a rating of 4.1.",
+              "verdict": "supported",
+              "reason": "The context provides the exact price and rating for the Zenana yoga pants."
+            },
+            {
+              "claim": "Pntutb Womens Pants Clearance costs $6.89 and has a rating of 5.0.",
+              "verdict": "supported",
+              "reason": "The context includes the price and rating for the Pntutb women's pants."
+            },
+            {
+              "claim": "a.Jesdani Women's Wide Leg Casual Pants costs $14.99 and has a rating of 4.7.",
+              "verdict": "supported",
+              "reason": "The context confirms the price and rating for the a.Jesdani women's pants."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.8136,
+        "details": {
+          "generated_questions": [
+            "What are some affordable options for women's yoga pants?",
+            "Can you provide the prices and ratings of women's yoga pants?",
+            "What features do the recommended women's yoga pants have?"
+          ],
+          "similarities": [
+            0.9625,
+            0.7714,
+            0.7068
+          ],
+          "mean_similarity": 0.8136
+        }
+      },
+      "context_relevance": {
+        "score": 1.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "relevant",
+              "reason": "contains a list of affordable women's yoga pants with prices and ratings"
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 1.0,
+        "details": {
+          "relevance_binary": [
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 1,
+              "precision": 1.0
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": 1.0,
+        "details": {
+          "total_statements": 6,
+          "covered_statements": 6,
+          "not_covered": 0,
+          "verdicts": [
+            {
+              "statement": "The Zenana Women's Soft Wide Waistband Active Fitness Tight Yoga Pants are priced at $11.99.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the price of the Zenana pants."
+            },
+            {
+              "statement": "The Zenana Women's Soft Wide Waistband Active Fitness Tight Yoga Pants have a rating of 4.1 stars.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the rating of the Zenana pants."
+            },
+            {
+              "statement": "The Pntutb Women's Solid Pants are priced at $6.89.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the price of the Pntutb solid pants."
+            },
+            {
+              "statement": "The Pntutb Women's Solid Pants have a rating of 5.0 stars.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the rating of the Pntutb solid pants."
+            },
+            {
+              "statement": "The a.Jesdani Women's Wide Leg Casual Pants are priced at $14.99.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the price of the a.Jesdani pants."
+            },
+            {
+              "statement": "The a.Jesdani Women's Wide Leg Casual Pants have a rating of 4.7 stars.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the rating of the a.Jesdani pants."
+            }
+          ]
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.0,
+        "details": {
+          "total_claims": 3,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 1.0
+        }
+      },
+      "query": "What are some affordable women's yoga pants?"
+    },
+    {
+      "faithfulness": {
+        "score": 0.8571,
+        "details": {
+          "total_claims": 7,
+          "supported_claims": 6,
+          "unsupported_claims": 1,
+          "verdicts": [
+            {
+              "claim": "The JONPONY Office Chair has an overall rating of 4.4 from 34 reviews.",
+              "verdict": "supported",
+              "reason": "The context explicitly states the rating and number of reviews."
+            },
+            {
+              "claim": "Many customers praise the chair for its comfort during long hours of use.",
+              "verdict": "supported",
+              "reason": "Several reviews mention comfort for extended use, particularly for working from home."
+            },
+            {
+              "claim": "The chair's design is appreciated for fitting well in various home office settings.",
+              "verdict": "supported",
+              "reason": "Customers express satisfaction with the chair's design and how it looks in their office."
+            },
+            {
+              "claim": "Most users found it straightforward to assemble.",
+              "verdict": "unsupported",
+              "reason": "While some reviews mention easy assembly, others report issues with parts not fitting together."
+            },
+            {
+              "claim": "Several reviews mention it feels sturdy and durable.",
+              "verdict": "supported",
+              "reason": "Multiple reviews indicate that the chair is sturdy and holds up well."
+            },
+            {
+              "claim": "A few customers reported receiving parts that did not fit together.",
+              "verdict": "supported",
+              "reason": "Several reviews detail issues with parts not fitting during assembly."
+            },
+            {
+              "claim": "Some found that the actual product didn't match the expected look from the pictures.",
+              "verdict": "supported",
+              "reason": "One review specifically mentions that the chair looks different in person than in the pictures."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.3138,
+        "details": {
+          "generated_questions": [
+            "What is the overall rating of the JONPONY Office Chair based on customer reviews?",
+            "What are some positive aspects of the JONPONY Office Chair mentioned by customers?",
+            "What issues did some customers face when assembling the JONPONY Office Chair?"
+          ],
+          "similarities": [
+            0.3542,
+            0.3394,
+            0.2478
+          ],
+          "mean_similarity": 0.3138
+        }
+      },
+      "context_relevance": {
+        "score": 1.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "relevant",
+              "reason": "The context provides customer reviews and ratings that directly address the query about whether the product is worth buying."
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 1.0,
+        "details": {
+          "relevance_binary": [
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 1,
+              "precision": 1.0
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": 1.0,
+        "details": {
+          "total_statements": 8,
+          "covered_statements": 8,
+          "not_covered": 0,
+          "verdicts": [
+            {
+              "statement": "The JONPONY Office Chair has a rating of 4.4.",
+              "verdict": "covered",
+              "reason": "The context explicitly states the rating of the chair as 4.4."
+            },
+            {
+              "statement": "The rating of the JONPONY Office Chair is based on 34 reviews.",
+              "verdict": "covered",
+              "reason": "The context mentions that the rating is based on 34 reviews."
+            },
+            {
+              "statement": "Customers appreciate the comfort of the JONPONY Office Chair for long hours.",
+              "verdict": "covered",
+              "reason": "Several reviews mention comfort for long hours of use."
+            },
+            {
+              "statement": "Customers find the JONPONY Office Chair easy to assemble.",
+              "verdict": "covered",
+              "reason": "Multiple reviews indicate that assembly was easy."
+            },
+            {
+              "statement": "The design of the JONPONY Office Chair is considered stylish by customers.",
+              "verdict": "covered",
+              "reason": "Customers specifically mention the chair's stylish design in their reviews."
+            },
+            {
+              "statement": "The JONPONY Office Chair is reported to be sturdy by customers.",
+              "verdict": "covered",
+              "reason": "One review explicitly states that the chair is very sturdy."
+            },
+            {
+              "statement": "Some customers have reported assembly issues with the JONPONY Office Chair.",
+              "verdict": "covered",
+              "reason": "Several reviews detail issues with assembly."
+            },
+            {
+              "statement": "Some customers have reported discrepancies in parts of the JONPONY Office Chair.",
+              "verdict": "covered",
+              "reason": "Multiple reviews mention that parts do not fit together correctly."
+            }
+          ]
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.1429,
+        "details": {
+          "total_claims": 7,
+          "hallucinated_claims_count": 1,
+          "hallucinated_claims": [
+            {
+              "claim": "Most users found it straightforward to assemble.",
+              "reason": "While some reviews mention easy assembly, others report issues with parts not fitting together."
+            }
+          ],
+          "faithfulness_score": 0.8571
+        }
+      },
+      "query": "Is product 5498678230 worth buying? What do customers say?"
+    }
+  ]
+}

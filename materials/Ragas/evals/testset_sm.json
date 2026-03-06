@@ -1,0 +1,26 @@
+[
+  {
+    "_type": "product_search — 一般的な商品検索",
+    "query": "I'm looking for a comfortable office chair under $200",
+    "ground_truth": "Here are some comfortable office chairs under $200: 1. **Yoyomax Office Chair** - Price: $32.99, Rating: ⭐4.6, Features: Ergonomic design, comfortable armrests, mesh material with wheels. 2. **JONPONY Office Chair** - Price: $69.99, Rating: ⭐4.4, Features: Armless design, crisscross legs, adjustable swivel, padded fabric. 3. **Homy Casa Teens Task Home Office Chair** - Price: $43.99, Rating: ⭐4.2, Features: Ergonomic small design, lumbar support, breathable mesh seat.",
+    "product_id": null
+  },
+  {
+    "_type": "product_detail — 特定商品の詳細",
+    "query": "Tell me about product 430528189. What are the specifications?",
+    "ground_truth": "The Exultantex Grey Blackout Curtains are priced at $47.88 and have a rating of 4.6 from 58 reviews. They feature a soft triple weave fabric, block at least 81% of light, and come in a set of 2 panels measuring 50\"W x 95\"L. Suitable for various rooms, they are easy to install and machine washable.",
+    "product_id": "430528189"
+  },
+  {
+    "_type": "product_search — 価格帯指定",
+    "query": "What are some affordable women's yoga pants?",
+    "ground_truth": "Some affordable women's yoga pants include the Zenana Women's Soft Wide Waistband Active Fitness Tight Yoga Pants priced at $11.99 with a rating of ⭐4.1, the Pntutb Women's Solid Pants at $6.89 with a rating of ⭐5.0, and the a.Jesdani Women's Wide Leg Casual Pants for $14.99 with a rating of ⭐4.7.",
+    "product_id": null
+  },
+  {
+    "_type": "review_analysis — レビュー分析",
+    "query": "Is product 5498678230 worth buying? What do customers say?",
+    "ground_truth": "The **JONPONY Office Chair** has a solid rating of **4.4** based on **34 reviews**. Customers appreciate its comfort for long hours, easy assembly, stylish design, and sturdiness, although some have reported assembly issues and part discrepancies.",
+    "product_id": "5498678230"
+  }
+]

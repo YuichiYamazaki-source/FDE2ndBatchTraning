@@ -160,3 +160,34 @@ Orchestrated LLM Application/
 - [[Task5_NewsCredibilityChecker_Architecture]] — アーキテクチャ図 (Mermaid)
 - `materials/Orchestrated LLM Application/minimal_mvp/main.py`
 - `materials/Orchestrated LLM Application/step1_eval/main.py`
+
+---
+
+## 🔗 Graph Links
+
+- 🗺️ MOC: [[MOC]]
+- Related Lecture (Orchestration) → [[Lecture/day24-FDE skills & LLM Orchestration/LLM Orchestration]]
+- Related Lecture (LangGraph/LangChain) → [[Lecture/day25-LangChain/LLM Orchestration with LangChain]]
+- Related Lecture (Agentic AI) → [[Lecture/day26-Agentic AI & RAG/Agentic AI & RAG]]
+- Related Lecture (MCP) → [[Lecture/day27-Agent Protocols & Advanced Use Cases/Agent Protocols & Advanced Use Cases]]
+- Related Lecture (Eval) → [[Lecture/day29-GenAI System Eva & Framework/GenAI System Evaluation & Framework]]
+- Architecture doc → [[materials/Orchestrated LLM Application/Task5_NewsCredibilityChecker_Architecture]]
+
+### 同じ概念を持つノート
+- `#concept/multi-agent` → [[Lecture/day26-Agentic AI & RAG/Agentic AI & RAG]]
+- `#concept/llm-as-judge` → [[Lecture/day24-FDE skills & LLM Orchestration/LLM Orchestration]]
+- `#concept/rag-pipeline` → [[Lecture/day22-Context Engineering/Context Engineering & RAG]]
+- `#concept/guardrails` → [[Lecture/day28-Securing LLMs & Guardrails/Securing LLMs & Guardrails]]
+- `#concept/eval-framework` → [[Lecture/day29-GenAI System Eva & Framework/GenAI System Evaluation & Framework]]
+
+### Capstone との接続
+- Multi-Agent構成 / LLM Ops → [[Captone/README]]
+
+---
+
+## 🏷️ Tags
+
+`#type/practice` `#domain/orchestration` `#domain/agent` `#domain/evaluation`
+`#concept/multi-agent` `#concept/llm-as-judge` `#concept/rag-pipeline`
+`#concept/agent-loop` `#concept/handoff` `#concept/evals`
+`#status/in-progress`

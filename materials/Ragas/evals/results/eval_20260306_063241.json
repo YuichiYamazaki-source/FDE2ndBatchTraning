@@ -1,0 +1,1506 @@
+{
+  "timestamp": "20260306_063241",
+  "num_questions": 15,
+  "scores_summary": {
+    "faithfulness": 0.5694,
+    "answer_relevancy": 0.5364,
+    "context_relevance": 0.5,
+    "context_precision": 0.5,
+    "context_recall": null,
+    "hallucination_detection": 0.4306
+  },
+  "per_question": [
+    {
+      "faithfulness": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 9,
+          "supported_claims": 9,
+          "unsupported_claims": 0,
+          "verdicts": [
+            {
+              "claim": "Yoyomax Office Chair costs $32.99",
+              "verdict": "supported",
+              "reason": "The context states the price of the Yoyomax Office Chair as $32.99."
+            },
+            {
+              "claim": "Yoyomax Office Chair has a rating of 4.6",
+              "verdict": "supported",
+              "reason": "The context indicates that the Yoyomax Office Chair has a rating of 4.6."
+            },
+            {
+              "claim": "Yoyomax Office Chair features ergonomic design, comfortable armrests, mesh material with wheels",
+              "verdict": "supported",
+              "reason": "The context describes the Yoyomax Office Chair as ergonomic with comfortable armrests, mesh material, and wheels."
+            },
+            {
+              "claim": "JONPONY Office Chair costs $69.99",
+              "verdict": "supported",
+              "reason": "The context states the price of the JONPONY Office Chair as $69.99."
+            },
+            {
+              "claim": "JONPONY Office Chair has a rating of 4.4",
+              "verdict": "supported",
+              "reason": "The context indicates that the JONPONY Office Chair has a rating of 4.4."
+            },
+            {
+              "claim": "JONPONY Office Chair features armless design, crisscross legs, adjustable swivel, padded fabric",
+              "verdict": "supported",
+              "reason": "The context describes the JONPONY Office Chair as having an armless design, crisscross legs, adjustable swivel, and padded fabric."
+            },
+            {
+              "claim": "Homy Casa Teens Task Home Office Chair costs $43.99",
+              "verdict": "supported",
+              "reason": "The context states the price of the Homy Casa Teens Task Home Office Chair as $43.99."
+            },
+            {
+              "claim": "Homy Casa Teens Task Home Office Chair has a rating of 4.2",
+              "verdict": "supported",
+              "reason": "The context indicates that the Homy Casa Teens Task Home Office Chair has a rating of 4.2."
+            },
+            {
+              "claim": "Homy Casa Teens Task Home Office Chair features ergonomic small design, lumbar support, breathable mesh seat",
+              "verdict": "supported",
+              "reason": "The context describes the Homy Casa Teens Task Home Office Chair as having an ergonomic small design, lumbar support, and a breathable mesh seat."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.6021,
+        "details": {
+          "generated_questions": [
+            "What are some affordable office chairs available for under $200?",
+            "Can you list the features of the Yoyomax Office Chair?",
+            "What is the price and rating of the JONPONY Office Chair?"
+          ],
+          "similarities": [
+            0.8457,
+            0.4713,
+            0.4892
+          ],
+          "mean_similarity": 0.6021
+        }
+      },
+      "context_relevance": {
+        "score": 1.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "relevant",
+              "reason": "Contains multiple options for office chairs under $200, including prices and ratings."
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 1.0,
+        "details": {
+          "relevance_binary": [
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 1,
+              "precision": 1.0
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.0,
+        "details": {
+          "total_claims": 9,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 1.0
+        }
+      },
+      "query": "I'm looking for a comfortable office chair under $200"
+    },
+    {
+      "faithfulness": {
+        "score": 0.6667,
+        "details": {
+          "total_claims": 9,
+          "supported_claims": 6,
+          "unsupported_claims": 3,
+          "verdicts": [
+            {
+              "claim": "Amay 100% Cotton 600-Thread Count 4-PCs Sheet Set costs $106.19",
+              "verdict": "supported",
+              "reason": "The context states the price of this sheet set as $106.19."
+            },
+            {
+              "claim": "Amay 100% Cotton 600-Thread Count 4-PCs Sheet Set has a rating of 5.0",
+              "verdict": "supported",
+              "reason": "The context indicates that this sheet set has a rating of 5.0."
+            },
+            {
+              "claim": "Amay 100% Cotton 600-Thread Count 4-PCs Sheet Set fits up to 21 inch deep pockets",
+              "verdict": "supported",
+              "reason": "The context confirms that this sheet set fits up to 21 inch deep pockets."
+            },
+            {
+              "claim": "Amay 800TC Organic Cotton Emperor Size Fitted Sheet costs $62.10",
+              "verdict": "supported",
+              "reason": "The context lists the price of this fitted sheet as $62.10."
+            },
+            {
+              "claim": "Amay 800TC Organic Cotton Emperor Size Fitted Sheet has a rating of 5.0",
+              "verdict": "supported",
+              "reason": "The context shows that this fitted sheet has a rating of 5.0."
+            },
+            {
+              "claim": "Amay 800TC Organic Cotton Emperor Size Fitted Sheet fits mattresses up to 18 inches",
+              "verdict": "supported",
+              "reason": "The context states that this fitted sheet fits mattresses up to 18 inches."
+            },
+            {
+              "claim": "Amay 100% Cotton 600-Thread Count 4-PCs Sheet Set costs $88.19",
+              "verdict": "unsupported",
+              "reason": "The context does not mention a sheet set with this price; it refers to a different set."
+            },
+            {
+              "claim": "Amay 100% Cotton 600-Thread Count 4-PCs Sheet Set has a rating of 4.2",
+              "verdict": "unsupported",
+              "reason": "The context indicates a rating of 5.0 for the specific sheet set in question."
+            },
+            {
+              "claim": "Amay 100% Cotton 600-Thread Count 4-PCs Sheet Set fits up to 24 inch deep pockets",
+              "verdict": "unsupported",
+              "reason": "The context states that this sheet set fits up to 21 inch deep pockets, not 24 inches."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.7038,
+        "details": {
+          "generated_questions": [
+            "What are some highly-rated cotton bed sheets?",
+            "Can you provide details about the Amay 100% Cotton 600-Thread Count sheet set?",
+            "What are the prices and ratings of the Amay cotton bed sheets mentioned?"
+          ],
+          "similarities": [
+            0.8557,
+            0.5563,
+            0.6993
+          ],
+          "mean_similarity": 0.7038
+        }
+      },
+      "context_relevance": {
+        "score": 1.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "relevant",
+              "reason": "Contains information about cotton bed sheets with their ratings."
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 1.0,
+        "details": {
+          "relevance_binary": [
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 1,
+              "precision": 1.0
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.3333,
+        "details": {
+          "total_claims": 9,
+          "hallucinated_claims_count": 3,
+          "hallucinated_claims": [
+            {
+              "claim": "Amay 100% Cotton 600-Thread Count 4-PCs Sheet Set costs $88.19",
+              "reason": "The context does not mention a sheet set with this price; it refers to a different set."
+            },
+            {
+              "claim": "Amay 100% Cotton 600-Thread Count 4-PCs Sheet Set has a rating of 4.2",
+              "reason": "The context indicates a rating of 5.0 for the specific sheet set in question."
+            },
+            {
+              "claim": "Amay 100% Cotton 600-Thread Count 4-PCs Sheet Set fits up to 24 inch deep pockets",
+              "reason": "The context states that this sheet set fits up to 21 inch deep pockets, not 24 inches."
+            }
+          ],
+          "faithfulness_score": 0.6667
+        }
+      },
+      "query": "Show me cotton bed sheets with good ratings"
+    },
+    {
+      "faithfulness": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 6,
+          "supported_claims": 6,
+          "unsupported_claims": 0,
+          "verdicts": [
+            {
+              "claim": "Zenana Women's Soft Wide Waistband Active Fitness Tight Yoga Pants cost $11.99",
+              "verdict": "supported",
+              "reason": "The context states the price of Zenana Women's Soft Wide Waistband Active Fitness Tight Yoga Pants is $11.99."
+            },
+            {
+              "claim": "Zenana Women's Soft Wide Waistband Active Fitness Tight Yoga Pants have a rating of 4.1",
+              "verdict": "supported",
+              "reason": "The context indicates that Zenana Women's Soft Wide Waistband Active Fitness Tight Yoga Pants have a rating of 4.1."
+            },
+            {
+              "claim": "Pntutb Women's Solid Pants cost $6.89",
+              "verdict": "supported",
+              "reason": "The context specifies that Pntutb Women's Solid Pants cost $6.89."
+            },
+            {
+              "claim": "Pntutb Women's Solid Pants have a rating of 5.0",
+              "verdict": "supported",
+              "reason": "The context shows that Pntutb Women's Solid Pants have a rating of 5.0."
+            },
+            {
+              "claim": "a.Jesdani Women's Wide Leg Casual Pants cost $14.99",
+              "verdict": "supported",
+              "reason": "The context confirms that a.Jesdani Women's Wide Leg Casual Pants cost $14.99."
+            },
+            {
+              "claim": "a.Jesdani Women's Wide Leg Casual Pants have a rating of 4.7",
+              "verdict": "supported",
+              "reason": "The context states that a.Jesdani Women's Wide Leg Casual Pants have a rating of 4.7."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.8267,
+        "details": {
+          "generated_questions": [
+            "What are some affordable women's yoga pants?",
+            "Can you provide the prices and ratings of women's yoga pants?",
+            "Which women's yoga pants have the highest customer rating?"
+          ],
+          "similarities": [
+            1.0,
+            0.7715,
+            0.7087
+          ],
+          "mean_similarity": 0.8267
+        }
+      },
+      "context_relevance": {
+        "score": 1.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "relevant",
+              "reason": "provides a list of affordable women's yoga pants with prices and ratings"
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 1.0,
+        "details": {
+          "relevance_binary": [
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 1,
+              "precision": 1.0
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.0,
+        "details": {
+          "total_claims": 6,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 1.0
+        }
+      },
+      "query": "What are some affordable women's yoga pants?"
+    },
+    {
+      "faithfulness": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 7,
+          "supported_claims": 7,
+          "unsupported_claims": 0,
+          "verdicts": [
+            {
+              "claim": "Athletic Works Men's 9\" Knit Jersey Shorts price is $9.98 and rating is 4.6",
+              "verdict": "supported",
+              "reason": "The context provides the exact price and rating for Athletic Works Men's 9\" Knit Jersey Shorts."
+            },
+            {
+              "claim": "NELEUS Mens 2 in 1 Dry Fit Workout Shorts price is $42.89 and rating is 4.5",
+              "verdict": "supported",
+              "reason": "The context includes the price and rating for NELEUS Mens 2 in 1 Dry Fit Workout Shorts."
+            },
+            {
+              "claim": "NELEUS Mens 2 in 1 Dry Fit Workout Shorts available colors are Black, Gray, Blue",
+              "verdict": "supported",
+              "reason": "The context lists the available colors for NELEUS Mens 2 in 1 Dry Fit Workout Shorts."
+            },
+            {
+              "claim": "NELEUS Men's Performance Compression Shorts (3 Pack) price is $19.79 and rating is 4.4",
+              "verdict": "supported",
+              "reason": "The context provides the price and rating for NELEUS Men's Performance Compression Shorts."
+            },
+            {
+              "claim": "NELEUS Men's Performance Compression Shorts (3 Pack) available colors are Black, Gray, Red",
+              "verdict": "supported",
+              "reason": "The context lists the available colors for NELEUS Men's Performance Compression Shorts."
+            },
+            {
+              "claim": "Wataxii Tear Away Shorts for Men price is $14.99 and rating is 5.0",
+              "verdict": "supported",
+              "reason": "The context includes the price and rating for Wataxii Tear Away Shorts for Men."
+            },
+            {
+              "claim": "Ma Croix Men's Mesh Shorts With Pockets price is $9.99 and rating is 4.3",
+              "verdict": "supported",
+              "reason": "The context provides the price and rating for Ma Croix Men's Mesh Shorts."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.6768,
+        "details": {
+          "generated_questions": [
+            "What are some alternatives to Nike workout shorts for men?",
+            "Can you provide a list of men's workout shorts along with their prices and ratings?",
+            "What are the available colors for the NELEUS Mens 2 in 1 Dry Fit Workout Shorts?"
+          ],
+          "similarities": [
+            0.7907,
+            0.6811,
+            0.5587
+          ],
+          "mean_similarity": 0.6768
+        }
+      },
+      "context_relevance": {
+        "score": 0.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 0,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "irrelevant",
+              "reason": "The context lists various men's workout shorts but does not mention Nike products."
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 0.0,
+        "details": {
+          "reason": "no relevant contexts found",
+          "relevance_binary": [
+            0
+          ]
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.0,
+        "details": {
+          "total_claims": 7,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 1.0
+        }
+      },
+      "query": "Do you have any Nike workout shorts for men?"
+    },
+    {
+      "faithfulness": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 20,
+          "supported_claims": 20,
+          "unsupported_claims": 0,
+          "verdicts": [
+            {
+              "claim": "Eclipse Dayton Solid Blackout Rod Pocket Curtain Panel is chocolate in color.",
+              "verdict": "supported",
+              "reason": "The context states the curtain panel is chocolate."
+            },
+            {
+              "claim": "Eclipse Dayton Solid Blackout Rod Pocket Curtain Panel is 42\"x63\" in size.",
+              "verdict": "supported",
+              "reason": "The context specifies the size as 42\"x63\"."
+            },
+            {
+              "claim": "Eclipse Dayton Solid Blackout Rod Pocket Curtain Panel costs $18.95.",
+              "verdict": "supported",
+              "reason": "The context lists the price as $18.95."
+            },
+            {
+              "claim": "Eclipse Dayton Solid Blackout Rod Pocket Curtain Panel has a rating of 3.9.",
+              "verdict": "supported",
+              "reason": "The context shows the rating as 3.9."
+            },
+            {
+              "claim": "Mainstays Blackout Curtain Panel Pair is black in color.",
+              "verdict": "supported",
+              "reason": "The context states the curtain panel pair is black."
+            },
+            {
+              "claim": "Mainstays Blackout Curtain Panel Pair is 30\"W x 84\"L in size.",
+              "verdict": "supported",
+              "reason": "The context specifies the size as 30\"W x 84\"L."
+            },
+            {
+              "claim": "Mainstays Blackout Curtain Panel Pair costs $9.94.",
+              "verdict": "supported",
+              "reason": "The context lists the price as $9.94."
+            },
+            {
+              "claim": "Mainstays Blackout Curtain Panel Pair has a rating of 4.4.",
+              "verdict": "supported",
+              "reason": "The context shows the rating as 4.4."
+            },
+            {
+              "claim": "Amay Grommet Top Blackout Curtain Panel is white in color.",
+              "verdict": "supported",
+              "reason": "The context states the curtain panel is white."
+            },
+            {
+              "claim": "Amay Grommet Top Blackout Curtain Panel is 120\" wide x 120\" long in size.",
+              "verdict": "supported",
+              "reason": "The context specifies the size as 120\" wide x 120\" long."
+            },
+            {
+              "claim": "Amay Grommet Top Blackout Curtain Panel costs $140.80.",
+              "verdict": "supported",
+              "reason": "The context lists the price as $140.80."
+            },
+            {
+              "claim": "Amay Grommet Top Blackout Curtain Panel has a rating of 5.0.",
+              "verdict": "supported",
+              "reason": "The context shows the rating as 5.0."
+            },
+            {
+              "claim": "Amay Grommet Top Blackout Curtain Panel is greyish white in color.",
+              "verdict": "supported",
+              "reason": "The context states the curtain panel is greyish white."
+            },
+            {
+              "claim": "Amay Grommet Top Blackout Curtain Panel is 150\" wide x 84\" long in size.",
+              "verdict": "supported",
+              "reason": "The context specifies the size as 150\" wide x 84\" long."
+            },
+            {
+              "claim": "Amay Grommet Top Blackout Curtain Panel costs $132.80.",
+              "verdict": "supported",
+              "reason": "The context lists the price as $132.80."
+            },
+            {
+              "claim": "Amay Grommet Top Blackout Curtain Panel has a rating of 5.0.",
+              "verdict": "supported",
+              "reason": "The context shows the rating as 5.0."
+            },
+            {
+              "claim": "Amay Blackout Grommet Curtain Panel is taupe in color.",
+              "verdict": "supported",
+              "reason": "The context states the curtain panel is taupe."
+            },
+            {
+              "claim": "Amay Blackout Grommet Curtain Panel is 52\" wide x 45\" long in size.",
+              "verdict": "supported",
+              "reason": "The context specifies the size as 52\" wide x 45\" long."
+            },
+            {
+              "claim": "Amay Blackout Grommet Curtain Panel costs $54.40.",
+              "verdict": "supported",
+              "reason": "The context lists the price as $54.40."
+            },
+            {
+              "claim": "Amay Blackout Grommet Curtain Panel has a rating of 5.0.",
+              "verdict": "supported",
+              "reason": "The context shows the rating as 5.0."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.5739,
+        "details": {
+          "generated_questions": [
+            "What are some recommended curtains for blocking sunlight in a living room?",
+            "Can you provide details about blackout curtain options and their prices?",
+            "What are the ratings and sizes of the blackout curtains listed?"
+          ],
+          "similarities": [
+            0.8266,
+            0.4976,
+            0.3976
+          ],
+          "mean_similarity": 0.5739
+        }
+      },
+      "context_relevance": {
+        "score": 1.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "relevant",
+              "reason": "The context lists various blackout curtain options, which are specifically designed to block sunlight."
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 1.0,
+        "details": {
+          "relevance_binary": [
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 1,
+              "precision": 1.0
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.0,
+        "details": {
+          "total_claims": 20,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 1.0
+        }
+      },
+      "query": "I need curtains for my living room that block sunlight"
+    },
+    {
+      "faithfulness": {
+        "score": 0.0,
+        "details": {
+          "reason": "empty contexts or response"
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.2199,
+        "details": {
+          "generated_questions": [
+            "What is the price of the Exultantex Grey Blackout Curtains?",
+            "How much light do these curtains block?",
+            "What are the dimensions of each panel of the Exultantex curtains?"
+          ],
+          "similarities": [
+            0.179,
+            0.2153,
+            0.2653
+          ],
+          "mean_similarity": 0.2199
+        }
+      },
+      "context_relevance": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_precision": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 0,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 0.0
+        }
+      },
+      "query": "Tell me about this product. What are the specifications?"
+    },
+    {
+      "faithfulness": {
+        "score": 0.0,
+        "details": {
+          "reason": "empty contexts or response"
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.3591,
+        "details": {
+          "generated_questions": [
+            "What is the price of the Laura Mercier Caviar Stick Eye Color Sugar Frost?",
+            "What are the main ingredients in the Laura Mercier Caviar Stick Eye Color?",
+            "Is the Laura Mercier Caviar Stick Eye Color safe for sensitive skin?"
+          ],
+          "similarities": [
+            0.2092,
+            0.3493,
+            0.5187
+          ],
+          "mean_similarity": 0.3591
+        }
+      },
+      "context_relevance": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_precision": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 0,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 0.0
+        }
+      },
+      "query": "What are the ingredients in this product? Is it safe for sensitive skin?"
+    },
+    {
+      "faithfulness": {
+        "score": 0.0,
+        "details": {
+          "reason": "empty contexts or response"
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.5591,
+        "details": {
+          "generated_questions": [
+            "What is the overall rating of the JONPONY Office Chair based on customer reviews?",
+            "What are some positive aspects mentioned by users about the JONPONY Office Chair?",
+            "What assembly issues have customers reported regarding the JONPONY Office Chair?"
+          ],
+          "similarities": [
+            0.5862,
+            0.5572,
+            0.5339
+          ],
+          "mean_similarity": 0.5591
+        }
+      },
+      "context_relevance": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_precision": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 0,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 0.0
+        }
+      },
+      "query": "Is this chair worth buying? What do customers say?"
+    },
+    {
+      "faithfulness": {
+        "score": 0.0,
+        "details": {
+          "reason": "empty contexts or response"
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.5521,
+        "details": {
+          "generated_questions": [
+            "What is the rating of the California Design Den Queen Fitted Sheet?",
+            "What are some pros and cons of the California Design Den Queen Fitted Sheet?",
+            "What should customers be cautious about when purchasing the California Design Den Queen Fitted Sheet?"
+          ],
+          "similarities": [
+            0.4787,
+            0.6836,
+            0.4939
+          ],
+          "mean_similarity": 0.5521
+        }
+      },
+      "context_relevance": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_precision": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 0,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 0.0
+        }
+      },
+      "query": "Are these sheets good quality? What are the pros and cons?"
+    },
+    {
+      "faithfulness": {
+        "score": 0.0,
+        "details": {
+          "reason": "empty contexts or response"
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.3167,
+        "details": {
+          "generated_questions": [
+            "What is the rating of the ITSUN Lingerie Set?",
+            "What issues have customers reported about the ITSUN Lingerie Set?",
+            "What is a highly rated alternative to the ITSUN Lingerie Set?"
+          ],
+          "similarities": [
+            0.2224,
+            0.3267,
+            0.4009
+          ],
+          "mean_similarity": 0.3167
+        }
+      },
+      "context_relevance": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_precision": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 0,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 0.0
+        }
+      },
+      "query": "This product has bad reviews. Can you suggest better alternatives?"
+    },
+    {
+      "faithfulness": {
+        "score": 0.0,
+        "details": {
+          "reason": "empty contexts or response"
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.6072,
+        "details": {
+          "generated_questions": [
+            "What are some alternatives to the NELEUS Men's 2 in 1 Dry Fit Workout Shorts?",
+            "Can you provide the prices and ratings of better-rated workout shorts?",
+            "What features do the Wataxii Tear Away Shorts for Men have?"
+          ],
+          "similarities": [
+            0.6061,
+            0.786,
+            0.4296
+          ],
+          "mean_similarity": 0.6072
+        }
+      },
+      "context_relevance": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_precision": {
+        "score": 0.0,
+        "details": {
+          "reason": "no contexts provided"
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 0,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 0.0
+        }
+      },
+      "query": "I want workout shorts but better rated than this one. Any suggestions?"
+    },
+    {
+      "faithfulness": {
+        "score": 0.875,
+        "details": {
+          "total_claims": 8,
+          "supported_claims": 7,
+          "unsupported_claims": 1,
+          "verdicts": [
+            {
+              "claim": "Laura Mercier Caviar Stick Eye Color (Sugar Frost) costs $22.90 and has a rating of 4.0.",
+              "verdict": "supported",
+              "reason": "The context provides the exact price and rating for the Laura Mercier product."
+            },
+            {
+              "claim": "wet n wild Color Icon 5 Pan Eye & Face Palette (Matte to Shimmer Glitter - Full Bloomin') costs $3.28 and has a rating of 3.5.",
+              "verdict": "supported",
+              "reason": "The context includes the price and rating for the wet n wild palette."
+            },
+            {
+              "claim": "NYX Jumbo Eye Pencil (#610 - Oyster) costs $9.97 and has a rating of 4.2.",
+              "verdict": "supported",
+              "reason": "The context confirms the price and rating for the NYX Jumbo Eye Pencil."
+            },
+            {
+              "claim": "Pretty Smart Celebrity Artist Eyeshadow Palette 102 costs $9.98 and has a rating of 4.6.",
+              "verdict": "supported",
+              "reason": "The context provides the price and rating for the Pretty Smart palette."
+            },
+            {
+              "claim": "NYX Professional Makeup Brow Powder Louder (Soft Brown) costs $7.97 and has a rating of 4.6.",
+              "verdict": "supported",
+              "reason": "The context includes the price and rating for the NYX Brow Powder."
+            },
+            {
+              "claim": "The wet n wild palette is the most affordable at $3.28.",
+              "verdict": "supported",
+              "reason": "The context shows that the wet n wild palette is priced at $3.28, which is the lowest among the listed products."
+            },
+            {
+              "claim": "The Laura Mercier product is the most expensive at $22.90.",
+              "verdict": "supported",
+              "reason": "The context indicates that the Laura Mercier product is priced at $22.90, which is higher than the other products."
+            },
+            {
+              "claim": "NYX products are priced under $10.",
+              "verdict": "unsupported",
+              "reason": "While some NYX products are under $10, the NYX Jumbo Eye Pencil is priced at $9.97, which is under $10, but the claim does not specify that all NYX products are under $10."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.5362,
+        "details": {
+          "generated_questions": [
+            "What is the price and rating of the Laura Mercier Caviar Stick Eye Color?",
+            "Which eye makeup product is the most affordable?",
+            "How do the prices of NYX products compare to other brands mentioned?"
+          ],
+          "similarities": [
+            0.4354,
+            0.6696,
+            0.5035
+          ],
+          "mean_similarity": 0.5362
+        }
+      },
+      "context_relevance": {
+        "score": 0.5,
+        "details": {
+          "total_contexts": 2,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "irrelevant",
+              "reason": "Contains information about jewelry and clothing, not eye makeup products."
+            },
+            {
+              "context_index": 2,
+              "verdict": "relevant",
+              "reason": "Lists various eye makeup products along with their prices."
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 0.5,
+        "details": {
+          "relevance_binary": [
+            0,
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 2,
+              "precision": 0.5
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.125,
+        "details": {
+          "total_claims": 8,
+          "hallucinated_claims_count": 1,
+          "hallucinated_claims": [
+            {
+              "claim": "NYX products are priced under $10.",
+              "reason": "While some NYX products are under $10, the NYX Jumbo Eye Pencil is priced at $9.97, which is under $10, but the claim does not specify that all NYX products are under $10."
+            }
+          ],
+          "faithfulness_score": 0.875
+        }
+      },
+      "query": "Find me some eye makeup products and compare their prices"
+    },
+    {
+      "faithfulness": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 22,
+          "supported_claims": 22,
+          "unsupported_claims": 0,
+          "verdicts": [
+            {
+              "claim": "Gerber Baby Snacks, Grain & Grow Puffs costs $2.72.",
+              "verdict": "supported",
+              "reason": "The context states the price of Gerber Baby Snacks as $2.72."
+            },
+            {
+              "claim": "Gerber Baby Snacks, Grain & Grow Puffs has a rating of 4.8.",
+              "verdict": "supported",
+              "reason": "The context indicates that Gerber Baby Snacks has a rating of 4.8."
+            },
+            {
+              "claim": "Gerber Baby Snacks, Grain & Grow Puffs comes in a 1.48 oz canister.",
+              "verdict": "supported",
+              "reason": "The context specifies that Gerber Baby Snacks is in a 1.48 oz canister."
+            },
+            {
+              "claim": "Zbar - Chocolate Chip and Iced Oatmeal Cookie Variety Pack costs $19.98.",
+              "verdict": "supported",
+              "reason": "The context lists the price of the Zbar Variety Pack as $19.98."
+            },
+            {
+              "claim": "Zbar - Chocolate Chip and Iced Oatmeal Cookie Variety Pack has a rating of 4.4.",
+              "verdict": "supported",
+              "reason": "The context shows that the Zbar Variety Pack has a rating of 4.4."
+            },
+            {
+              "claim": "Zbar - Chocolate Chip and Iced Oatmeal Cookie Variety Pack contains 1.27 oz (24 Count).",
+              "verdict": "supported",
+              "reason": "The context states that the Zbar Variety Pack contains 1.27 oz and has 24 count."
+            },
+            {
+              "claim": "Zbar - Chocolate Chip and Iced Oatmeal Cookie Variety Pack is soft baked.",
+              "verdict": "supported",
+              "reason": "The context describes the Zbar Variety Pack as soft baked."
+            },
+            {
+              "claim": "Zbar - Chocolate Chip and Iced Oatmeal Cookie Variety Pack is USDA Organic.",
+              "verdict": "supported",
+              "reason": "The context indicates that the Zbar Variety Pack is USDA Organic."
+            },
+            {
+              "claim": "Zbar - Chocolate Chip and Iced Oatmeal Cookie Variety Pack is Non-GMO.",
+              "verdict": "supported",
+              "reason": "The context mentions that the Zbar Variety Pack is Non-GMO."
+            },
+            {
+              "claim": "Zbar - Chocolate Chip and Iced Oatmeal Cookie Variety Pack is plant-based.",
+              "verdict": "supported",
+              "reason": "The context states that the Zbar Variety Pack is plant-based."
+            },
+            {
+              "claim": "Nature's Bakery Gluten Free Pomegranate Fig Bars costs $17.49.",
+              "verdict": "supported",
+              "reason": "The context lists the price of Nature's Bakery Fig Bars as $17.49."
+            },
+            {
+              "claim": "Nature's Bakery Gluten Free Pomegranate Fig Bars has a rating of 3.7.",
+              "verdict": "supported",
+              "reason": "The context shows that Nature's Bakery Fig Bars has a rating of 3.7."
+            },
+            {
+              "claim": "Nature's Bakery Gluten Free Pomegranate Fig Bars comes in a 3 pack of 6 twin packs, 2 oz each.",
+              "verdict": "supported",
+              "reason": "The context specifies that Nature's Bakery Fig Bars come in a 3 pack of 6 twin packs, 2 oz each."
+            },
+            {
+              "claim": "Great Value Strawberry Mango Powdered Liquid Drink Mix costs $2.08.",
+              "verdict": "supported",
+              "reason": "The context states the price of Great Value Strawberry Mango Drink Mix as $2.08."
+            },
+            {
+              "claim": "Great Value Strawberry Mango Powdered Liquid Drink Mix has a rating of 3.8.",
+              "verdict": "supported",
+              "reason": "The context indicates that Great Value Strawberry Mango Drink Mix has a rating of 3.8."
+            },
+            {
+              "claim": "Great Value Strawberry Mango Powdered Liquid Drink Mix comes in a 0.99 oz package with 10 packets.",
+              "verdict": "supported",
+              "reason": "The context specifies that Great Value Strawberry Mango Drink Mix comes in a 0.99 oz package with 10 packets."
+            },
+            {
+              "claim": "Snickers Fun Size Halloween Chocolate Candy Bars costs $5.94.",
+              "verdict": "supported",
+              "reason": "The context lists the price of Snickers Fun Size Halloween Candy Bars as $5.94."
+            },
+            {
+              "claim": "Snickers Fun Size Halloween Chocolate Candy Bars has a rating of 4.5.",
+              "verdict": "supported",
+              "reason": "The context shows that Snickers Fun Size Halloween Candy Bars has a rating of 4.5."
+            },
+            {
+              "claim": "Snickers Fun Size Halloween Chocolate Candy Bars comes in an 18.71 oz bag.",
+              "verdict": "supported",
+              "reason": "The context specifies that Snickers Fun Size Halloween Candy Bars come in an 18.71 oz bag."
+            },
+            {
+              "claim": "Golden Krust Jamaican Jerk Style Chicken Patty costs $1.24.",
+              "verdict": "supported",
+              "reason": "The context states the price of Golden Krust Jamaican Jerk Style Chicken Patty as $1.24."
+            },
+            {
+              "claim": "Golden Krust Jamaican Jerk Style Chicken Patty has a rating of 4.2.",
+              "verdict": "supported",
+              "reason": "The context indicates that Golden Krust Jamaican Jerk Style Chicken Patty has a rating of 4.2."
+            },
+            {
+              "claim": "Golden Krust Jamaican Jerk Style Chicken Patty comes in a 1 count, 5 oz (frozen).",
+              "verdict": "supported",
+              "reason": "The context specifies that Golden Krust Jamaican Jerk Style Chicken Patty comes in a 1 count, 5 oz (frozen)."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.5957,
+        "details": {
+          "generated_questions": [
+            "What are some healthy snack options that cost less than $20?",
+            "Can you provide a list of snacks along with their prices and ratings?",
+            "What is the price and rating of the Gerber Baby Snacks?"
+          ],
+          "similarities": [
+            0.8255,
+            0.5187,
+            0.4429
+          ],
+          "mean_similarity": 0.5957
+        }
+      },
+      "context_relevance": {
+        "score": 1.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "relevant",
+              "reason": "Contains multiple healthy snack options under $20."
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 1.0,
+        "details": {
+          "relevance_binary": [
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 1,
+              "precision": 1.0
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.0,
+        "details": {
+          "total_claims": 22,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 1.0
+        }
+      },
+      "query": "I'm looking for healthy snacks or food products under $20"
+    },
+    {
+      "faithfulness": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 10,
+          "supported_claims": 10,
+          "unsupported_claims": 0,
+          "verdicts": [
+            {
+              "claim": "Younger Tree Baby Boy Kid Summer Outfits Set costs $9.98.",
+              "verdict": "supported",
+              "reason": "The context states the price of the Younger Tree Baby Boy Kid Summer Outfits Set as $9.98."
+            },
+            {
+              "claim": "Younger Tree Baby Boy Kid Summer Outfits Set has a rating of 4.8.",
+              "verdict": "supported",
+              "reason": "The context indicates that the rating for the Younger Tree Baby Boy Kid Summer Outfits Set is 4.8."
+            },
+            {
+              "claim": "Lolanta Summer Boys Suit costs $27.89.",
+              "verdict": "supported",
+              "reason": "The context provides the price of the Lolanta Summer Boys Suit as $27.89."
+            },
+            {
+              "claim": "Lolanta Summer Boys Suit has a rating of 4.7.",
+              "verdict": "supported",
+              "reason": "The context shows that the rating for the Lolanta Summer Boys Suit is 4.7."
+            },
+            {
+              "claim": "IDOPIP Baby Boys Formal Suit costs $12.99.",
+              "verdict": "supported",
+              "reason": "The context lists the price of the IDOPIP Baby Boys Formal Suit as $12.99."
+            },
+            {
+              "claim": "IDOPIP Baby Boys Formal Suit has a rating of 5.0.",
+              "verdict": "supported",
+              "reason": "The context confirms that the rating for the IDOPIP Baby Boys Formal Suit is 5.0."
+            },
+            {
+              "claim": "Bagilaanoe Toddler Baby Boy One-Piece Swimsuit costs $9.87.",
+              "verdict": "supported",
+              "reason": "The context states the price of the Bagilaanoe Toddler Baby Boy One-Piece Swimsuit as $9.87."
+            },
+            {
+              "claim": "Bagilaanoe Toddler Baby Boy One-Piece Swimsuit has a rating of 5.0.",
+              "verdict": "supported",
+              "reason": "The context indicates that the rating for the Bagilaanoe Toddler Baby Boy One-Piece Swimsuit is 5.0."
+            },
+            {
+              "claim": "EnJoCho Toddler Boys Pull On Shorts costs $4.44.",
+              "verdict": "supported",
+              "reason": "The context provides the price of the EnJoCho Toddler Boys Pull On Shorts as $4.44."
+            },
+            {
+              "claim": "EnJoCho Toddler Boys Pull On Shorts has a rating of 1.0.",
+              "verdict": "supported",
+              "reason": "The context shows that the rating for the EnJoCho Toddler Boys Pull On Shorts is 1.0."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.5609,
+        "details": {
+          "generated_questions": [
+            "What are some clothing options for a 5-year-old boy?",
+            "Can you provide details about a summer outfit for boys?",
+            "What is the price and rating of the IDOPIP Baby Boys Formal Suit?"
+          ],
+          "similarities": [
+            0.8064,
+            0.4999,
+            0.3763
+          ],
+          "mean_similarity": 0.5609
+        }
+      },
+      "context_relevance": {
+        "score": 1.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "relevant",
+              "reason": "The context lists various clothing options for boys, including sizes that may fit a 5-year-old."
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 1.0,
+        "details": {
+          "relevance_binary": [
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 1,
+              "precision": 1.0
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.0,
+        "details": {
+          "total_claims": 10,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 1.0
+        }
+      },
+      "query": "What kids clothing do you have? I need something for a 5-year-old boy"
+    },
+    {
+      "faithfulness": {
+        "score": 1.0,
+        "details": {
+          "total_claims": 10,
+          "supported_claims": 10,
+          "unsupported_claims": 0,
+          "verdicts": [
+            {
+              "claim": "Pntutb Rollback and Clearance Summer Tee Tops for Women costs $5.39",
+              "verdict": "supported",
+              "reason": "The context states the price of the Pntutb Rollback and Clearance Summer Tee Tops for Women as $5.39."
+            },
+            {
+              "claim": "Pntutb Rollback and Clearance Summer Tee Tops for Women has a rating of 3.0",
+              "verdict": "supported",
+              "reason": "The context indicates that the rating for the Pntutb Rollback and Clearance Summer Tee Tops for Women is 3.0."
+            },
+            {
+              "claim": "PPYOUNG Women's Off Shoulder Long Sleeve Blouses costs $17.99",
+              "verdict": "supported",
+              "reason": "The context provides the price of the PPYOUNG Women's Off Shoulder Long Sleeve Blouses as $17.99."
+            },
+            {
+              "claim": "PPYOUNG Women's Off Shoulder Long Sleeve Blouses has a rating of 4.3",
+              "verdict": "supported",
+              "reason": "The context shows that the rating for the PPYOUNG Women's Off Shoulder Long Sleeve Blouses is 4.3."
+            },
+            {
+              "claim": "U.S. Polo Assn. Men's Interlock Polo costs $30.62",
+              "verdict": "supported",
+              "reason": "The context states the price of the U.S. Polo Assn. Men's Interlock Polo as $30.62."
+            },
+            {
+              "claim": "U.S. Polo Assn. Men's Interlock Polo has a rating of 4.7",
+              "verdict": "supported",
+              "reason": "The context indicates that the rating for the U.S. Polo Assn. Men's Interlock Polo is 4.7."
+            },
+            {
+              "claim": "JWD Women's Shirts Casual V Neck T-shirts Puff Short Sleeve Summer Tops costs $14.99",
+              "verdict": "supported",
+              "reason": "The context provides the price of the JWD Women's Shirts Casual V Neck T-shirts as $14.99."
+            },
+            {
+              "claim": "JWD Women's Shirts Casual V Neck T-shirts Puff Short Sleeve Summer Tops has a rating of 4.6",
+              "verdict": "supported",
+              "reason": "The context shows that the rating for the JWD Women's Shirts Casual V Neck T-shirts is 4.6."
+            },
+            {
+              "claim": "FindChic Men Triple Moon Ring Goddess Fidget Ring costs $11.24",
+              "verdict": "supported",
+              "reason": "The context states the price of the FindChic Men Triple Moon Ring as $11.24."
+            },
+            {
+              "claim": "FindChic Men Triple Moon Ring Goddess Fidget Ring has a rating of 4.8",
+              "verdict": "supported",
+              "reason": "The context indicates that the rating for the FindChic Men Triple Moon Ring is 4.8."
+            }
+          ]
+        }
+      },
+      "answer_relevancy": {
+        "score": 0.356,
+        "details": {
+          "generated_questions": [
+            "What are some popular clothing items currently available?",
+            "Can you provide the prices and ratings of popular women's tops?",
+            "What is the price and rating of the U.S. Polo Assn. Men's Interlock Polo?"
+          ],
+          "similarities": [
+            0.6164,
+            0.349,
+            0.1026
+          ],
+          "mean_similarity": 0.356
+        }
+      },
+      "context_relevance": {
+        "score": 1.0,
+        "details": {
+          "total_contexts": 1,
+          "relevant_contexts": 1,
+          "judgments": [
+            {
+              "context_index": 1,
+              "verdict": "relevant",
+              "reason": "The context lists popular clothing items and accessories with prices and ratings, indicating current trends."
+            }
+          ]
+        }
+      },
+      "context_precision": {
+        "score": 1.0,
+        "details": {
+          "relevance_binary": [
+            1
+          ],
+          "total_relevant": 1,
+          "precision_at_k": [
+            {
+              "k": 1,
+              "precision": 1.0
+            }
+          ]
+        }
+      },
+      "context_recall": {
+        "score": null,
+        "details": {
+          "reason": "ground_truth not provided"
+        }
+      },
+      "hallucination_detection": {
+        "score": 0.0,
+        "details": {
+          "total_claims": 10,
+          "hallucinated_claims_count": 0,
+          "hallucinated_claims": [],
+          "faithfulness_score": 1.0
+        }
+      },
+      "query": "What's popular right now?"
+    }
+  ]
+}

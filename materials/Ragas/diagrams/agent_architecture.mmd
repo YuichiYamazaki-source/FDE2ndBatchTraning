@@ -1,0 +1,61 @@
+%%{init: {'theme': 'base'}}%%
+graph TB
+    %% ===== Agent Architecture - 1 Agent, 4 Tools, 2 Guardrails =====
+
+    %% Step 1
+    Query["1. User Query<br/><i>e.g. Tell me about product 430528189</i>"]
+
+    %% Step 2
+    InputGuard{{"2. InputGuardrail (SDK)<br/>injection_detector (custom fn)<br/>Blocks: ignore previous instructions,<br/>system prompt, you are now, disregard, override"}}
+
+    %% Step 3
+    subgraph AgentBox["3. Agent (SDK) — Orchestrator / gpt-4o-mini"]
+        direction LR
+        Instructions["INSTRUCTIONS<br/>(custom)<br/>- get_product for ID queries<br/>- analyze_reviews for quality<br/>- recommend_alternatives for poor ratings<br/>- search_products for general<br/>- Always include product ID"]
+        Runner["Runner.run() (SDK)<br/>LLM reasoning → tool call<br/>→ tool result → LLM<br/>→ final_output"]
+    end
+
+    %% Step 4
+    subgraph Tools["4. Tools — @function_tool (SDK) + custom logic"]
+        direction LR
+        T1["search_products<br/>vector embed query<br/>→ ChromaDB similarity"]
+        T2["get_product<br/>ChromaDB get by ID<br/>returns Product ID + fields"]
+        T3["analyze_reviews<br/>ChromaDB get reviews<br/>+ rating summary"]
+        T4["recommend_alternatives<br/>ChromaDB filter<br/>category + min_rating"]
+    end
+
+    %% Step 5
+    OutputGuard{{"5. OutputGuardrail (SDK)<br/>secret_leak_detector (custom fn)<br/>Blocks: OPENAI_API_KEY, sk-,<br/>password, secret_key"}}
+
+    %% Step 6
+    Response["6. Final Response<br/><i>result.final_output</i>"]
+
+    %% External
+    OpenAI(("OpenAI API<br/>gpt-4o-mini<br/>text-embedding-3-small"))
+    ChromaDB[("ChromaDB<br/>walmart-products<br/>889 items")]
+
+    %% ===== Flow =====
+    Query --> InputGuard
+    InputGuard -->|pass| AgentBox
+    AgentBox --> Tools
+    Tools --> OutputGuard
+    OutputGuard -->|pass| Response
+
+    Runner -->|LLM calls| OpenAI
+    Tools -->|DB access| ChromaDB
+
+    %% ===== Styles =====
+    style Query fill:#dae8fc,stroke:#6c8ebf
+    style InputGuard fill:#f8cecc,stroke:#b85450
+    style AgentBox fill:#fff2cc,stroke:#d6b656
+    style Instructions fill:#ffffcc,stroke:#d6b656
+    style Runner fill:#fff2cc,stroke:#d6b656
+    style Tools fill:none,stroke:#82b366,stroke-dasharray: 5 5
+    style T1 fill:#d5e8d4,stroke:#82b366
+    style T2 fill:#d5e8d4,stroke:#82b366
+    style T3 fill:#d5e8d4,stroke:#82b366
+    style T4 fill:#d5e8d4,stroke:#82b366
+    style OutputGuard fill:#f8cecc,stroke:#b85450
+    style Response fill:#dae8fc,stroke:#6c8ebf
+    style OpenAI fill:#ffe6cc,stroke:#d79b00
+    style ChromaDB fill:#e1d5e7,stroke:#9673a6

@@ -1,0 +1,87 @@
+%%{init: {'theme': 'base'}}%%
+graph TB
+    %% ===== Evaluation Pipeline Architecture =====
+
+    %% Row 1: Data Sources
+    subgraph DataSources["Data Sources"]
+        direction LR
+        SM["testset_sm.json<br/>4 questions<br/>(quick ~3min)"]
+        MD["testset_md.json<br/>8 questions<br/>(balanced ~7min)"]
+        LG["testset_lg.json<br/>15 questions<br/>(full ~15min)"]
+        GoldenDB["golden_db.json<br/>15 GT entries<br/>LLM-generated<br/>+ human-reviewed"]
+        GoldenScript["golden_db.py<br/>--apply: merge GT<br/>into testset.json"]
+    end
+
+    %% Row 2: Collection
+    EvalRunner["<b>eval_runner.py</b><br/>Main Pipeline Script<br/>--testset: select sm/md/lg<br/>--skip-collect: reuse responses"]
+    AgentExec["Orchestrator Agent<br/>(capturing tools)<br/>All 4 tool outputs<br/>captured as contexts"]
+    Collected["collected_latest.json<br/>{query, contexts[],<br/>response, ground_truth}"]
+
+    %% Row 3: Metrics
+    MetricsEngine["<b>metrics.py</b><br/>LLM-as-Judge (gpt-4o-mini)"]
+
+    subgraph Metrics["6 Custom Metrics"]
+        direction LR
+        M1["faithfulness<br/>claims supported<br/>by contexts"]
+        M2["answer_relevancy<br/>reverse question gen<br/>+ embedding similarity"]
+        M3["context_relevance<br/>retrieved docs<br/>relevant to query?"]
+        M4["context_precision<br/>relevant contexts<br/>ranked higher?"]
+        M5["context_recall<br/>GT covered<br/>by contexts?"]
+        M6["hallucination<br/>claims contradicting<br/>or unsupported"]
+    end
+
+    %% Row 4: Results
+    EvalJSON["eval_YYYYMMDD_HHMMSS.json<br/>scores_summary + per_question"]
+
+    %% Row 5: Quality Gates
+    Pytest["<b>test_quality.py</b> (pytest)"]
+
+    subgraph QualityGates["Quality Gate Tests"]
+        direction LR
+        TQA["TestQA<br/>faithfulness >= 0.5<br/>answer_relevancy >= 0.5"]
+        THalluc["TestHallucination<br/>hallucination <= 0.5<br/>no complete hallucination"]
+        TValid["TestValidation<br/>context_relevance >= 0.4<br/>context_recall >= 0.4"]
+    end
+
+    %% ===== Connections =====
+    GoldenDB -.->|--apply| GoldenScript
+    GoldenScript -.->|merge GT| LG
+
+    SM --> EvalRunner
+    MD --> EvalRunner
+    LG --> EvalRunner
+
+    EvalRunner -->|run agent| AgentExec
+    AgentExec -->|save| Collected
+
+    EvalRunner --> MetricsEngine
+    MetricsEngine --> Metrics
+
+    MetricsEngine --> EvalJSON
+    EvalJSON -->|reads latest| Pytest
+    Pytest --> QualityGates
+
+    %% ===== Styles =====
+    style DataSources fill:none,stroke:#6c8ebf,stroke-dasharray: 5 5
+    style SM fill:#dae8fc,stroke:#6c8ebf
+    style MD fill:#dae8fc,stroke:#6c8ebf
+    style LG fill:#dae8fc,stroke:#6c8ebf
+    style GoldenDB fill:#fff2cc,stroke:#d6b656
+    style GoldenScript fill:#fff2cc,stroke:#d6b656
+    style EvalRunner fill:#d5e8d4,stroke:#82b366
+    style AgentExec fill:#fff2cc,stroke:#d6b656
+    style Collected fill:#f5f5f5,stroke:#666666
+    style MetricsEngine fill:#d5e8d4,stroke:#82b366
+    style Metrics fill:none,stroke:#4a86c8,stroke-dasharray: 5 5
+    style M1 fill:#e6f2ff,stroke:#4a86c8
+    style M2 fill:#e6f2ff,stroke:#4a86c8
+    style M3 fill:#e6f2ff,stroke:#4a86c8
+    style M4 fill:#e6f2ff,stroke:#4a86c8
+    style M5 fill:#e6f2ff,stroke:#4a86c8
+    style M6 fill:#e6f2ff,stroke:#4a86c8
+    style EvalJSON fill:#f5f5f5,stroke:#666666
+    style Pytest fill:#f8cecc,stroke:#b85450
+    style QualityGates fill:none,stroke:#b85450,stroke-dasharray: 5 5
+    style TQA fill:#fce4ec,stroke:#b85450
+    style THalluc fill:#fce4ec,stroke:#b85450
+    style TValid fill:#fce4ec,stroke:#b85450

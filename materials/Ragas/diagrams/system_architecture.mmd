@@ -1,0 +1,52 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#d5e8d4', 'secondaryColor': '#dae8fc', 'tertiaryColor': '#fff2cc'}}}%%
+graph LR
+    %% ===== System Architecture - RAG E-commerce Assistant =====
+
+    User((User))
+
+    subgraph Docker["Docker Compose"]
+        direction TB
+
+        Frontend["<b>Frontend</b><br/>React + Vite<br/>Port 5173"]
+        Backend["<b>Backend</b><br/>FastAPI + Uvicorn<br/>Port 8000"]
+
+        subgraph Agent["Orchestrator Agent (gpt-4o-mini)"]
+            direction TB
+            GIn{{"Input Guardrail<br/>injection_detector"}}
+            GOut{{"Output Guardrail<br/>secret_leak_detector"}}
+            T1["search_products"]
+            T2["get_product"]
+            T3["analyze_reviews"]
+            T4["recommend_alternatives"]
+        end
+
+        ChromaDB[("ChromaDB<br/>Vector Store<br/>Port 8001<br/>889 items")]
+    end
+
+    OpenAI(("OpenAI API<br/>gpt-4o-mini<br/>text-embedding-3-small"))
+    Evals["Evaluation Pipeline<br/>eval_runner.py<br/>metrics.py (6 metrics)<br/>test_quality.py"]
+
+    %% ===== Connections =====
+    User -->|HTTP| Frontend
+    Frontend -->|REST API| Backend
+    Backend --> Agent
+    Agent -->|"query / get"| ChromaDB
+    Agent -->|"LLM + Embedding"| OpenAI
+    Evals -.->|"evaluate<br/>(calls Agent)"| Backend
+    Evals -.->|"LLM-as-Judge"| OpenAI
+
+    %% ===== Styles =====
+    style User fill:#ffffff,stroke:#333333
+    style Frontend fill:#dae8fc,stroke:#6c8ebf
+    style Backend fill:#d5e8d4,stroke:#82b366
+    style Agent fill:#fffbe6,stroke:#d6b656
+    style GIn fill:#f8cecc,stroke:#b85450
+    style GOut fill:#f8cecc,stroke:#b85450
+    style T1 fill:#d5e8d4,stroke:#82b366
+    style T2 fill:#d5e8d4,stroke:#82b366
+    style T3 fill:#d5e8d4,stroke:#82b366
+    style T4 fill:#d5e8d4,stroke:#82b366
+    style ChromaDB fill:#e1d5e7,stroke:#9673a6
+    style OpenAI fill:#ffe6cc,stroke:#d79b00
+    style Evals fill:#f0e6ff,stroke:#7c5caa,stroke-dasharray: 5 5
+    style Docker fill:none,stroke:#666666,stroke-dasharray: 5 5
